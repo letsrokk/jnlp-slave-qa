@@ -20,7 +20,7 @@ USER jenkins
 
 ENV ALLURE_VERSION 2.12.1
 
-RUN wget -O allure.zip https://github.com/allure-framework/allure2/releases/download/${ALLURE_VERSION}/allure-${ALLURE_VERSION}.zip
+RUN wget -O allure.zip https://dl.bintray.com/qameta/maven/io/qameta/allure/allure-commandline/${ALLURE_VERSION}/allure-commandline-${ALLURE_VERSION}.zip
 RUN unzip allure.zip && rm allure.zip
 RUN mv allure-${ALLURE_VERSION} allure
 
